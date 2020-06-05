@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Timer</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="timer-box">
+			<h1><span>
+					<img src="img/time.png" alt="">
+				</span>
+				Таймер вчителя 
+			</h1>
+			<div class="timer-content">
+				<div class="timer-tools">
+					<h2>Оберіть фразу:</h2>
+					<div class="phrases">
+						<input type="radio" id="letsworking" name="choise">
+						<label for="letsworking">Починаємо працювати</label>
+						<br><br>
+						<input type="radio" id="completethecard" name="choise">
+						<label for="completethecard">Завершуємо картку</label>
+						<br><br>
+						<input type="radio" id="meeting" name="choise">
+						<label for="meeting">Мітінг</label>
+						<br><br>
+						<input type="radio" id="completethelayout" name="choise">
+						<label for="completethelayout">Завершуємо макет</label>
+						<br><br>
+						<input type="radio" id="givework" name="choise">
+						<label for="givework">Здаємо роботи</label>
+						<br><br>
+					</div>
+					<div class="timer-settings">
+						<input type="text" min="1" placeholder="через …хв" id="minutes">
+						<button class="start" type="button" id="start">
+							Почати
+						</button>
+					</div>
+				</div>
+				<div class="timer">
+					<div id="inputArea"></div>
+					<div id="time" class="time">00:00</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="js/script.js"></script>
+</body>
+</html>
